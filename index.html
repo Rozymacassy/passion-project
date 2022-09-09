@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(127, 2, 50) 91.1%);
+
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        img {
+            max-width: 350px;
+            border-radius: 20px;
+            display: block;
+            margin: 30px auto;
+            padding: 3px;
+            box-shadow: 5px 5px 15px rgba(240, 231, 231, 0.589);
+        }
+
+        .text {
+            font-weight: lighter;
+            color: rgba(255, 255, 255, 0.699);
+            line-height: 1.5;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 50px;
+            border-radius: 15px;
+            background: transparent;
+            color: #fff;
+            box-shadow: inset 3px 5px 5px, 2px 5px 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 200ms ease-in-out;
+            border: 2px solid rgba(239, 37, 37, 0.986);
+        }
+
+        button:hover {
+            background-color: rgba(137, 43, 226, 0.219);
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lend A helping hand 🙏</h1>
+        <hr>
+        <h2>Show <em>LOVE </em> even unto those who cant love themselves</h2>
+        <hr>
+        <img src="https://getdohelp.com/img/uploads/blogs/17-b8609f5c5a22bdd5e8f982bf74bf5e30.jpg"
+            alt=" image the needy ">
+        <p class="text">
+            Not everyone is as privileged like you, a lot of people live life in shambles and in complete destitute.
+            It is unfortunate that they are born unprivileged and do not get a platform to step up and rise in life.
+            Those people are not fortunate enough to get good education, get a well paying job and they end up with
+            miserable
+            things. However you can donate money for needy people and help them to uplift their lives and provide a base
+            to do something that they otherwise could not.
+        </p>
+
+        <button>
+            Donate
+        </button>
+    </div>
+    <p class="footer">coded by <a href="www.linkedin.com/in/rozymacassy">Chinenye Rosemary</a> </p>
+    <script>
+        function donateNow() {
+            let name = prompt("What is your name?");
+            let amount = prompt("How much are you willing to donate?");
+
+            if (amount >= 1) {
+                alert("Thank you" + " " + name + " " + "your donation has been recieved. 🤍");
+
+            } else {
+                alert("Please! make a donation. 🙏🙏🙏");
+
+            }
+        }
+        let donate = document.querySelector("button");
+        donate.addEventListener("click", donateNow);
+    </script>
+</body>
+
+</html>
